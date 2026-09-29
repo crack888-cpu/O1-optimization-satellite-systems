@@ -31,9 +31,7 @@ def newton_raphson(k, n=2.0, tol=1e-7, max_iter=100):
         x = x_new
     return x, max_iter
 
-# ==========================================
 # 1. BENCHMARKING DE TIEMPO (Demostración del ~70%)
-# ==========================================
 print("Ejecutando millones de iteraciones para medir tiempos reales...")
 k_bench = 10.0
 n_bench = 2.0
@@ -45,7 +43,7 @@ for _ in range(num_pruebas):
     _ = newton_raphson(k_bench, n_bench)
 t_newton = time.time() - t0
 
-# Prueba Tu Fórmula
+# Prueba Fórmula Propuesta
 t0 = time.time()
 for _ in range(num_pruebas):
     _ = formula_propuesta_estupinan(k_bench, n_bench)
@@ -61,9 +59,7 @@ print(f"Tiempo total Tu Fórmula O(1): {t_propuesta:.4f} segundos")
 print(f"Reducción del esfuerzo computacional: {reduccion_porcentaje:.2f}%")
 print("="*50 + "\n")
 
-# ==========================================
-# 2. GENERACIÓN DE LA GRÁFICA PARA EL PAPER
-# ==========================================
+# 2. GENERACIÓN DE LA GRÁFICA
 print("Generando gráfica de Transición de Fase e Intratabilidad...")
 valores_k = np.linspace(2, 50, 400)
 errores_absolutos = []
@@ -86,7 +82,7 @@ plt.grid(True, linestyle='--', alpha=0.6)
 plt.legend(loc='upper right', fontsize=9)
 plt.xlim(2, 50)
 
-# Guardar la imagen para el paper
+# Guardar la imagen
 plt.savefig('grafica_error_transicion.png', dpi=300, bbox_inches='tight')
 plt.show()
-print("Gráfica guardada exitosamente como 'grafica_error_transicion.png' en tus archivos de Colab.")
+
