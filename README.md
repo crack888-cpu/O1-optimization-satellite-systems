@@ -8,5 +8,5 @@ Este repositorio contiene el núcleo algorítmico desarrollado para la optimizac
 - **Complejidad Algorítmica:** Estricto orden constante $O(1)$, eliminando el indeterminismo temporal (jitter) de los bucles condicionales en sistemas de tiempo real crítico.
 
 ## Autoría y Propiedad Intelectual
-- **Investigador Principal:** Juan Estupiñán (Universidad Autónoma de Occidente - UAO, Cali, Colombia).
+- **Investigador Principal:** Juan Manuel Estupiñán Medina (Universidad Autónoma de Occidente - UAO, Cali, Colombia).
 - **Licencia:** MIT License (Protección de autoría digital y requerimiento de citación obligatoria).
