@@ -34,7 +34,7 @@ def newton_raphson(k, n=2.0, tol=1e-7, max_iter=100):
 # ==========================================
 # 1. BENCHMARKING DE TIEMPO (Demostración del ~70%)
 # ==========================================
-print("🔄 Ejecutando millones de iteraciones para medir tiempos reales...")
+print("Ejecutando millones de iteraciones para medir tiempos reales...")
 k_bench = 10.0
 n_bench = 2.0
 num_pruebas = 500000
@@ -54,7 +54,7 @@ t_propuesta = time.time() - t0
 reduccion_porcentaje = ((t_newton - t_propuesta) / t_newton) * 100
 
 print("\n" + "="*50)
-print("📊 RESULTADOS EMPÍRICOS DE RENDIMIENTO (BENCHMARK)")
+print("RESULTADOS EMPÍRICOS DE RENDIMIENTO (BENCHMARK)")
 print("="*50)
 print(f"Tiempo total Newton-Raphson : {t_newton:.4f} segundos")
 print(f"Tiempo total Tu Fórmula O(1): {t_propuesta:.4f} segundos")
@@ -89,4 +89,4 @@ plt.xlim(2, 50)
 # Guardar la imagen para el paper
 plt.savefig('grafica_error_transicion.png', dpi=300, bbox_inches='tight')
 plt.show()
-print("💾 Gráfica guardada exitosamente como 'grafica_error_transicion.png' en tus archivos de Colab.")
+print("Gráfica guardada exitosamente como 'grafica_error_transicion.png' en tus archivos de Colab.")
